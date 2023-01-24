@@ -2,7 +2,7 @@
 {%block content%}
  {%if book%}
     {%for i in book%}
-        <h3><li>{{i.title}}</li></h3>
+        <h3><li><a href="{% url 'book_detail' i.id %}">{{i.title}}</a></li></h3>
         <p>Price: {{i.price}}</p>
         <hr>
     {%endfor%}

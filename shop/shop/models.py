@@ -7,8 +7,8 @@ User = get_user_model()
 class Book(models.Model):
     title = models.CharField(max_length=150)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    quantity = models.IntegerField()
-    id_in_sklad = models.IntegerField()
+    quantity = models.PositiveIntegerField()
+    id_in_sklad = models.PositiveIntegerField()
 
 
 class Order(models.Model):
