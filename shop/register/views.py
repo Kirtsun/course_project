@@ -17,4 +17,4 @@ def registers(request):
             return redirect('book_list')
     else:
         user_form = UserRegistrationForm()
-    return render(request, 'register/register.html', {'user_form': user_form})
+    return render(request, 'registration/register.html', {'user_form': user_form})

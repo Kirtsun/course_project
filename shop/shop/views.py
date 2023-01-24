@@ -4,6 +4,7 @@ from .forms import OrderCreateForm
 from django.views import generic
 from cart.forms import CartAddBookForm
 from cart.cart import Cart
+from django.contrib.auth.decorators import login_required
 
 
 class BookList(generic.ListView):
@@ -19,6 +20,7 @@ def book_detail(request, pk):
     return render(request, 'shop/book_detail.html', {'book': book, 'cart_book_form': cart_book_form})
 
 
+@login_required
 def order_create(request):
     cart = Cart(request)
     if request.method == 'POST':
