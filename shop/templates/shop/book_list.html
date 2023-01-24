@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{%block content%}
+ {%if book%}
+    {%for i in book%}
+        <h3><li>{{i.title}}</li></h3>
+        <p>Price: {{i.price}}</p>
+        <hr>
+    {%endfor%}
+    {%else%}
+    <p>NO BOOK</p>
+{%endif%}
+{%endblock%}
