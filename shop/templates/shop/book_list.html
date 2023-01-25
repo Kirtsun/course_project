@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{%block content%}
+ {%if book%}
+    {%for i in book%}
+        <h3><li><a href="{% url 'book_detail' i.id %}">{{i.title}}</a></li></h3>
+        <p>Price: {{i.price}}</p>
+        <hr>
+    {%endfor%}
+    {%else%}
+    <p>NO BOOK</p>
+{%endif%}
+{%endblock%}
