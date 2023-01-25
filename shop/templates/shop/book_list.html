@@ -7,6 +7,7 @@
         {{ filter.form.as_p }}
         <input type="submit" value="Filter"/>
     </form>
+<p><a href="{% url 'book_list' %}">Reset the filter</a> </p>
     {% if books%}
     {% for obj in books %}
         <li>Book: <a href="{% url 'book_detail' obj.id %}">{{ obj.title }}</a></li>
