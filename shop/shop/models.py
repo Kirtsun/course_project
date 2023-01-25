@@ -10,6 +10,9 @@ class Book(models.Model):
     quantity = models.PositiveIntegerField()
     id_in_sklad = models.PositiveIntegerField()
 
+    def __str__(self):
+        return self.title
+
 
 class Order(models.Model):
     CART = 'CART'
@@ -24,5 +27,17 @@ class Order(models.Model):
     ]
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     status = models.CharField(choices=ORDER_CHOICES, default=CART, max_length=8)
-    delivery_address = models.CharField(max_length=150)
+    city = models.CharField(max_length=150)
+    address = models.CharField(max_length=150)
+
+
+class OrderItem(models.Model):
+    order = models.ForeignKey(Order, on_delete=models.CASCADE)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    quantity = models.PositiveIntegerField(default=1)
+
+    def get_cost(self):
+        return self.price * self.quantity
+
 

@@ -2,9 +2,12 @@
 {%block content%}
 <li>{{book.title}}</li>
 <p>${{ book.price }}</p>
+{% if user.is_authenticated %}
 <form action="{% url 'cart_add' book.id %}" method="post">
     {{ cart_book_form }}
     {% csrf_token %}
     <input type="submit" value="Add to cart">
 </form>
+{% endif %}
+<p><a href="{% url 'book_list' %}">Back</a> </p>
 {%endblock%}

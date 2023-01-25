@@ -1,12 +1,37 @@
 {% extends "base.html" %}
-{%block content%}
- {%if book%}
-    {%for i in book%}
-        <h3><li><a href="{% url 'book_detail' i.id %}">{{i.title}}</a></li></h3>
-        <p>Price: {{i.price}}</p>
+{% block title %}All book{% endblock %}
+
+{% block content %}
+<h3>All book</h3>
+    <form method="get">
+        {{ filter.form.as_p }}
+        <input type="submit" value="Filter"/>
+    </form>
+<p><a href="{% url 'book_list' %}">Reset the filter</a> </p>
+    {% if books%}
+    {% for obj in books %}
+        <li>Book: <a href="{% url 'book_detail' obj.id %}">{{ obj.title }}</a></li>
+        <p>Price - ${{ obj.price }}</p>
         <hr>
-    {%endfor%}
+    {% endfor %}
     {%else%}
-    <p>NO BOOK</p>
-{%endif%}
-{%endblock%}
+    <p>Check the filter data</p>
+    {%endif%}
+{% endblock %}
+         {% block pagination %}
+          {% if books %}
+          <div class="pagination">
+            <span class="page-links">
+                {% if books.has_previous %}
+                  <a href="{{ request.path }}?page={{ books.previous_page_number }}">Previous</a>
+                {% endif %}
+              <span class="page-current">
+                    Page {{ books.number }} of {{ books.paginator.num_pages }}.
+                </span>
+              {% if books.has_next %}
+                <a href="{{ request.path }}?page={{ books.next_page_number }}">Next</a>
+              {% endif %}
+            </span>
+          </div>
+          {% endif %}
+      {% endblock %}
