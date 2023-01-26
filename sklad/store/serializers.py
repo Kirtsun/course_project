@@ -8,25 +8,23 @@ User = get_user_model()
 
 
 class BookSerializer(serializers.HyperlinkedModelSerializer):
-    book = serializers.HyperlinkedRelatedField(many=True, view_name='book-detail', source="book_set",
-                                               queryset=BookItem.objects.all(), format='JSON')
+    bookitem = serializers.HyperlinkedRelatedField(many=True, view_name='bookitem-detail', source='bookitem_set',
+                                                   queryset=BookItem.objects.all())
 
     class Meta:
         model = Book
-        fields = ['url', 'id', 'title', 'price', 'book']
+        fields = ['url', 'id', 'title', 'price', 'bookitem']
 
 
 class BookItemSerializer(serializers.HyperlinkedModelSerializer):
-    orderitem_bookitem = serializers.HyperlinkedRelatedField(many=True, view_name='order-item-book-item',
-                                                             queryset=OrderItemBookItem.objects.all())
 
     class Meta:
         model = BookItem
-        fields = ['url', 'id', 'place', 'orderitem_bookitem']
+        fields = ['url', 'id', 'place', 'book']
 
 
 class OrderSerializer(serializers.HyperlinkedModelSerializer):
-    order_item = serializers.HyperlinkedRelatedField(many=True, view_name='order-item',
+    order_item = serializers.HyperlinkedRelatedField(many=True, view_name='orderitem-detail', source='orderitem_set',
                                                      queryset=OrderItem.objects.all())
 
     class Meta:
@@ -35,23 +33,21 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class OrderItemSerializer(serializers.HyperlinkedModelSerializer):
-    order = serializers.HyperlinkedRelatedField(many=True, view_name='order', source='order_set',
-                                                queryset=Order.objects.all())
-    book_store = serializers.HyperlinkedRelatedField(many=True, view_name='book', source='book_set',
-                                                     queryset=Book.objects.all())
+    bookitem = serializers.HyperlinkedRelatedField(many=True, view_name='orderitembookitem-detail',
+                                                   read_only=True)
 
     class Meta:
         model = OrderItem
-        fields = ['url', 'id', 'quantity', 'order', 'book_store']
+        fields = ['url', 'id', 'quantity', 'book_store', 'order', 'bookitem']
 
 
 class OrderItemBookItemSerializer(serializers.HyperlinkedModelSerializer):
-    order_item = serializers.HyperlinkedRelatedField(many=True, view_name='order-item',
-                                                     queryset=OrderItem.objects.all())
-    book_item = serializers.HyperlinkedRelatedField(many=True, view_name='book-item',
-                                                    queryset=BookItem.objects.all())
+    order_item = serializers.HyperlinkedRelatedField(many=True, view_name='orderitem-detail',
+                                                     read_only=True)
+    book_item = serializers.HyperlinkedRelatedField(many=True, view_name='bookitem-detail',
+                                                    read_only=True)
 
     class Meta:
-        moder = OrderItemBookItem
+        model = OrderItemBookItem
         fields = ['url', 'id', 'order_item', 'book_item']
 
