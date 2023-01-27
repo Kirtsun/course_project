@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  shop:
+  shop: &shop
     container_name: shop
     build:
       context: .
@@ -12,10 +12,11 @@ services:
       DB_PASSWORD: 'postgres'
       DB_HOST: 'db_shop'
       DB_PORT: '5432'
-    ports:
-      - 8000:8000
+    expose:
+      - 8000
     networks:
       - shop_db_net
+      - nginx_network
     depends_on:
       - db_shop
     volumes:
@@ -34,9 +35,10 @@ services:
       DB_PASSWORD: 'postgres'
       DB_HOST: 'db_sklad'
       DB_PORT: '5432'
-    ports:
-      - 8001:8000
+    expose:
+      - 8001
     networks:
+      - nginx_network
       - sklad_db_net
     depends_on:
       - db_sklad
@@ -72,10 +74,75 @@ services:
     volumes:
       - db_sklad_vol:/var/lib/postgresql/data
 
+  mailhog:
+    container_name: mailhog
+    image: mailhog/mailhog:latest
+    command: [ "-smtp-bind-addr", "0.0.0.0:25" ]
+    user: root
+    restart: on-failure
+    networks:
+      - shop_db_net
+      - nginx_network
+    expose:
+      - 25
+      - 8025
+
+  redis:
+    container_name: redis
+    image: redis
+    restart: on-failure
+    networks:
+      - shop_db_net
+    expose:
+      - 6379
+    volumes:
+      - redis:/var/lib/redis/data
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq
+    restart: on-failure
+    networks:
+      - shop_db_net
+      - nginx_network
+    expose:
+      - 5432
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+  celery:
+    <<: *shop
+    container_name: celery
+    expose: []
+    networks:
+      - shop_db_net
+    depends_on:
+      - redis
+      - db_shop
+      - shop
+    command: celery -A core worker -B -l INFO
+
+  nginx:
+    container_name: nginx
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    restart: on-failure
+    networks:
+      - nginx_network
+    ports:
+      - 8000:8000
+      - 8025:8025
+      - 8001:8001
+
+
 networks:
   shop_db_net:
   sklad_db_net:
+  nginx_network:
 
 volumes:
   db_shop_vol:
   db_sklad_vol:
+  rabbitmq_data:
+  redis:
