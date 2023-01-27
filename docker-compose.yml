@@ -1,0 +1,75 @@
+version: '3.7'
+
+services:
+  shop:
+    container_name: shop
+    build:
+      context: .
+      dockerfile: shop.Dockerfile
+    environment:
+      DB_NAME: 'db_shop'
+      DB_USER: 'postgres'
+      DB_PASSWORD: 'postgres'
+      DB_HOST: 'db_shop'
+      DB_PORT: '5432'
+    ports:
+      - 8000:8000
+    networks:
+      - shop_db_net
+    depends_on:
+      - db_shop
+    volumes:
+      - ./shop:/app
+    command: sh runserver.sh
+
+
+#  sklad:
+#    container_name: sklad
+#    build:
+#      context: .
+#      dockerfile: sklad.Dockerfile
+#    ports:
+#      - 8001:8000
+#    networks:
+#      - sklad_db_net
+#    depends_on:
+#      - db_sklad
+#    volumes:
+#      - ./sklad:/app
+#    command: sh runserver.sh
+
+  db_shop:
+    container_name: db_shop
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+      POSTGRES_DB: 'db_shop'
+    expose:
+      - 5432
+    networks:
+      - shop_db_net
+    volumes:
+      - db_shop_vol:/var/lib/postgresql/data
+
+#  db_sklad:
+#    container_name: db_sklad
+#    image: postgres:12-alpine
+#    environment:
+#      POSTGRES_USER: 'postgres'
+#      POSTGRES_PASSWORD: 'postgres'
+#      POSTGRES_DB: 'db_sklad'
+#    expose:
+#      - 5432
+#    networks:
+#      - sklad_db_net
+#    volumes:
+#      - db_sklad_vol:/var/lib/postgresql/data
+
+networks:
+  shop_db_net:
+  sklad_db_net:
+
+volumes:
+  db_shop_vol:
+  db_sklad_vol:

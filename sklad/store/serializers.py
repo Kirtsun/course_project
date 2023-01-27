@@ -20,7 +20,7 @@ class BookItemSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = BookItem
-        fields = ['url', 'id', 'place', 'book']
+        fields = ['url', 'id', 'rack', 'place', 'book']
 
 
 class OrderSerializer(serializers.HyperlinkedModelSerializer):
