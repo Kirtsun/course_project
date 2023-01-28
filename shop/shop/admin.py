@@ -24,3 +24,8 @@ class OrderAdmin(admin.ModelAdmin):
                     'address']
     list_filter = ['status']
     inlines = [OrderItemInline]
+
+
+@admin.register(OrderItem)
+class OrderItemAdmin(admin.ModelAdmin):
+    list_display = ['order', 'book', 'price', 'quantity']

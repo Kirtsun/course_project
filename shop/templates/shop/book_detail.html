@@ -4,8 +4,8 @@
 <p>${{ book.price }}</p>
 {% if user.is_authenticated %}
 <form action="{% url 'cart_add' book.id %}" method="post">
-    {{ cart_book_form }}
     {% csrf_token %}
+    {{ cart_book_form }}
     <input type="submit" value="Add to cart">
 </form>
 {% endif %}

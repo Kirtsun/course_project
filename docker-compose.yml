@@ -1,0 +1,154 @@
+version: '3.7'
+
+services:
+  shop: &shop
+    container_name: shop
+    build:
+      context: .
+      dockerfile: shop.Dockerfile
+    environment:
+      DB_NAME: 'db_shop'
+      DB_USER: 'postgres'
+      DB_PASSWORD: 'postgres'
+      DB_HOST: 'db_shop'
+      DB_PORT: '5432'
+    expose:
+      - 8000
+    networks:
+      - shop_db_net
+      - nginx_network
+    depends_on:
+      - db_shop
+    volumes:
+      - ./shop:/app
+    command: sh runserver.sh
+
+
+  sklad:
+    container_name: sklad
+    build:
+      context: .
+      dockerfile: sklad.Dockerfile
+    environment:
+      DB_NAME: 'db_sklad'
+      DB_USER: 'postgres'
+      DB_PASSWORD: 'postgres'
+      DB_HOST: 'db_sklad'
+      DB_PORT: '5432'
+    expose:
+      - 8001
+    networks:
+      - nginx_network
+      - sklad_db_net
+    depends_on:
+      - db_sklad
+    volumes:
+      - ./sklad:/app
+    command: sh runserver.sh
+
+  db_shop:
+    container_name: db_shop
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+      POSTGRES_DB: 'db_shop'
+    expose:
+      - 5432
+    networks:
+      - shop_db_net
+    volumes:
+      - db_shop_vol:/var/lib/postgresql/data
+
+  db_sklad:
+    container_name: db_sklad
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+      POSTGRES_DB: 'db_sklad'
+    expose:
+      - 5432
+    networks:
+      - sklad_db_net
+    volumes:
+      - db_sklad_vol:/var/lib/postgresql/data
+
+  mailhog:
+    container_name: mailhog
+    image: mailhog/mailhog:latest
+    command: [ "-smtp-bind-addr", "0.0.0.0:25" ]
+    user: root
+    restart: on-failure
+    networks:
+      - shop_db_net
+      - nginx_network
+    expose:
+      - 1025
+      - 8025
+
+  redis:
+    container_name: redis
+    image: redis
+    restart: on-failure
+    networks:
+      - shop_db_net
+    expose:
+      - 6379
+    volumes:
+      - redis:/var/lib/redis/data
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq
+    restart: on-failure
+    networks:
+      - shop_db_net
+    expose:
+      - 5432
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+  celery:
+    <<: *shop
+    container_name: celery
+    expose: []
+    networks:
+      - shop_db_net
+      - nginx_network
+    depends_on:
+      - redis
+      - rabbitmq
+      - db_shop
+      - shop
+    command: celery -A core worker -B -l INFO
+
+  nginx:
+    container_name: nginx
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    restart: on-failure
+    networks:
+      - nginx_network
+    ports:
+      - '8000:8000'
+      - '8025:8025'
+      - '8001:8001'
+    depends_on:
+      - shop
+      - sklad
+      - db_shop
+      - db_sklad
+
+
+networks:
+  shop_db_net:
+  sklad_db_net:
+  nginx_network:
+
+volumes:
+  db_shop_vol:
+  db_sklad_vol:
+  rabbitmq_data:
+  redis:
