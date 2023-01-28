@@ -59,4 +59,3 @@ class OrderItemBookItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrderItemBookItem
         fields = ['id', 'order_item', 'book_item']
-

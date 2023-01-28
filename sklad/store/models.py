@@ -63,5 +63,3 @@ class OrderItemBookItem(models.Model):
 
     def __str__(self):
         return f'Order Item Book Item Id {str(self.id)}'
-
-

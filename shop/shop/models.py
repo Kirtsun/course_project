@@ -37,14 +37,14 @@ class Order(LifecycleModel):
     def on_status(self):
         send_mail('Order in a bookstore', f'You order have a new status: "{self.status}", wait for the delivery'
                                           f' of the purchase', 'bookstore@gmail.com',
-                  [self.user_id.email],
+                  [self.user.email],
                   fail_silently=False)
 
     @hook(AFTER_UPDATE, when="status", was="*", is_now='FAIL')
     def on_status(self):
         send_mail('Order in a bookstore', f'Yuo order have a new status "{self.status}". The store administration'
                                           f' will contact you shortly.', 'bookstore@gmail.com',
-                  [self.user_id.email],
+                  [self.user.email],
                   fail_silently=False)
 
 
@@ -59,5 +59,3 @@ class OrderItem(models.Model):
 
     def __str__(self):
         return self.book.title
-
-

@@ -32,4 +32,3 @@ class OrderItemViewSet(viewsets.ModelViewSet):
 class OrderItemBookItemViewSet(viewsets.ModelViewSet):
     queryset = OrderItemBookItem.objects.all()
     serializer_class = OrderItemBookItemSerializer
-

@@ -65,4 +65,3 @@ class OrderItemAdmin(admin.ModelAdmin):
 class OrderItemBookItemAdmin(admin.ModelAdmin):
     list_display = ['id']
     list_display_links = ['id']
-

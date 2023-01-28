@@ -1,7 +1,6 @@
 from celery import shared_task
 from .models import Order, Book
 import requests
-from django.shortcuts import get_object_or_404
 
 
 @shared_task()
@@ -24,6 +23,10 @@ def send_order(order_id):
     }
 
     r = requests.post('http://sklad:8001/order/', json=body)
+    if r.status_code == 200:
+        order.status = 'ORDERED'
+    else:
+        send_order.apply_async((order.id,), countdown=60)
     pass
 
 
@@ -40,4 +43,3 @@ def sync_book():
                          quantity=len(i['book']))
 
     pass
-
