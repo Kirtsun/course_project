@@ -132,7 +132,6 @@ services:
     networks:
       - nginx_network
     ports:
-      - '80:80'
       - '8000:8000'
       - '8025:8025'
       - '8001:8001'

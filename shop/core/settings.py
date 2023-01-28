@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+
+from celery.schedules import crontab
 import environ
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -47,6 +49,7 @@ INSTALLED_APPS = [
     'cart',
     'django_extensions',
     'django_filters',
+    'django_celery_beat',
 
 ]
 
@@ -162,5 +165,10 @@ AMQP_URL = "amqp://rabbitmq:5672"
 BROKER_URL = AMQP_URL
 CELERY_result_backend = REDIS_URL
 CELERY_BROKER_URL = BROKER_URL
+CELERY_BEAT_SCHEDULE = {
+    'syncbook': {
+        'task': 'shop.tasks.sync_book',
+        'schedule': crontab()}
+    }
 
 CSRF_TRUSTED_ORIGINS = ["http://localhost:8000", "http://127.0.0.1:8000"]

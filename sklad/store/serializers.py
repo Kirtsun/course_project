@@ -7,7 +7,23 @@ from .models import Book, BookItem, Order, OrderItem, OrderItemBookItem
 User = get_user_model()
 
 
-class OrderItemSerializer(serializers.HyperlinkedModelSerializer):
+class BookItemSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = BookItem
+        fields = ['id', 'rack', 'place', 'book']
+        read_only_fields = ['order', ]
+
+
+class BookSerializer(serializers.ModelSerializer):
+    book = serializers.PrimaryKeyRelatedField(many=True, read_only=True, source='bookitem_set')
+
+    class Meta:
+        model = Book
+        fields = ['id', 'title', 'price', 'book']
+
+
+class OrderItemSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = OrderItem
@@ -15,7 +31,7 @@ class OrderItemSerializer(serializers.HyperlinkedModelSerializer):
         read_only_fields = ['order', ]
 
 
-class OrderSerializer(serializers.HyperlinkedModelSerializer):
+class OrderSerializer(serializers.ModelSerializer):
     order_item = OrderItemSerializer(many=True, write_only=True)
 
     class Meta:
@@ -32,4 +48,15 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
                            quantity=item['quantity']) for item in validated_data['order_item']]
         order.orderitem_set.bulk_create(batch)
         return order
+
+
+class OrderItemBookItemSerializer(serializers.ModelSerializer):
+    order_item = serializers.HyperlinkedRelatedField(many=True, view_name='orderitem-detail',
+                                                     read_only=True)
+    book_item = serializers.HyperlinkedRelatedField(many=True, view_name='bookitem-detail',
+                                                    read_only=True)
+
+    class Meta:
+        model = OrderItemBookItem
+        fields = ['id', 'order_item', 'book_item']
 

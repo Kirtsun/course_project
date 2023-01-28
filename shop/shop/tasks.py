@@ -1,6 +1,7 @@
 from celery import shared_task
-from .models import Order
+from .models import Order, Book
 import requests
+from django.shortcuts import get_object_or_404
 
 
 @shared_task()
@@ -23,5 +24,20 @@ def send_order(order_id):
     }
 
     r = requests.post('http://sklad:8001/order/', json=body)
+    pass
+
+
+@shared_task()
+def sync_book():
+    r = requests.get('http://sklad:8001/book/')
+    if r.status_code == 200:
+        res = r.json()
+        for i in res:
+            Book.objects.update_or_create(
+                         title=i['title'],
+                         price=i['price'],
+                         id_in_sklad=i['id'],
+                         quantity=len(i['book']))
 
     pass
+

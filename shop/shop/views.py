@@ -7,7 +7,7 @@ from cart.cart import Cart
 from django.contrib.auth.decorators import login_required
 from .filter import BookFilter
 from django.core.mail import send_mail
-from .tasks import send_order
+from .tasks import send_order, sync_book
 
 
 def book_list(request):
