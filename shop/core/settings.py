@@ -26,8 +26,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-_(=%f*!o1o*ws2tft%d86
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'localhost',
+    "0.0.0.0",
+    "127.0.0.1",
+]
 
 # Application definition
 
@@ -160,3 +163,4 @@ BROKER_URL = AMQP_URL
 CELERY_result_backend = REDIS_URL
 CELERY_BROKER_URL = BROKER_URL
 
+CSRF_TRUSTED_ORIGINS = ["http://localhost:8000", "http://127.0.0.1:8000"]

@@ -39,7 +39,7 @@ class Order(models.Model):
     ]
     user = models.CharField(max_length=100)
     user_email = models.EmailField()
-    status = models.CharField(choices=ORDER_CHOICES, max_length=10)
+    status = models.CharField(choices=ORDER_CHOICES, max_length=10, default=IN_WORK)
     city = models.CharField(max_length=50)
     address = models.CharField(max_length=100)
     order_id_in_shop = models.PositiveIntegerField()

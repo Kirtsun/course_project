@@ -26,7 +26,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-q(uj_*pt^%1(xsynr2_f7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    "0.0.0.0",
+    "127.0.0.1",
+    'sklad'
+]
 
 
 # Application definition
@@ -42,6 +47,9 @@ INSTALLED_APPS = [
     'store',
 
     'rest_framework',
+
+    'rest_framework.authtoken',
+
 ]
 
 MIDDLEWARE = [
@@ -133,3 +141,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
 }
+
+CSRF_TRUSTED_ORIGINS = ["http://localhost:8001", "http://127.0.0.1:8001", "http://0.0.0.0:8001"]

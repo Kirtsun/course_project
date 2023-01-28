@@ -16,6 +16,6 @@ EXPOSE 8000
 
 RUN chmod +x docker-entrypoint.sh /wait-for-command.sh runserver.sh
 
-#ENTRYPOINT ["/app/docker-entrypoint.sh"]
+#ENTRYPOINT ["/shop/docker-entrypoint.sh"]
 
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

@@ -45,7 +45,7 @@ services:
     volumes:
       - ./sklad:/app
     command: sh runserver.sh
-#
+
   db_shop:
     container_name: db_shop
     image: postgres:12-alpine
@@ -84,7 +84,7 @@ services:
       - shop_db_net
       - nginx_network
     expose:
-      - 25
+      - 1025
       - 8025
 
   redis:
@@ -104,7 +104,6 @@ services:
     restart: on-failure
     networks:
       - shop_db_net
-      - nginx_network
     expose:
       - 5432
     volumes:
@@ -116,8 +115,10 @@ services:
     expose: []
     networks:
       - shop_db_net
+      - nginx_network
     depends_on:
       - redis
+      - rabbitmq
       - db_shop
       - shop
     command: celery -A core worker -B -l INFO
@@ -131,9 +132,15 @@ services:
     networks:
       - nginx_network
     ports:
-      - 8000:8000
-      - 8025:8025
-      - 8001:8001
+      - '80:80'
+      - '8000:8000'
+      - '8025:8025'
+      - '8001:8001'
+    depends_on:
+      - shop
+      - sklad
+      - db_shop
+      - db_sklad
 
 
 networks:

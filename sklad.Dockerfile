@@ -12,10 +12,10 @@ COPY sklad app/
 
 WORKDIR app/
 
-EXPOSE 8000
+EXPOSE 8001
 
 RUN chmod +x docker-entrypoint.sh /wait-for-command.sh runserver.sh
 
-#ENTRYPOINT ["/shop/docker-entrypoint.sh"]
+#ENTRYPOINT ["/slad/docker-entrypoint.sh"]
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8001"]

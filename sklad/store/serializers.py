@@ -7,47 +7,29 @@ from .models import Book, BookItem, Order, OrderItem, OrderItemBookItem
 User = get_user_model()
 
 
-class BookSerializer(serializers.HyperlinkedModelSerializer):
-    bookitem = serializers.HyperlinkedRelatedField(many=True, view_name='bookitem-detail', source='bookitem_set',
-                                                   queryset=BookItem.objects.all())
-
-    class Meta:
-        model = Book
-        fields = ['url', 'id', 'title', 'price', 'bookitem']
-
-
-class BookItemSerializer(serializers.HyperlinkedModelSerializer):
-
-    class Meta:
-        model = BookItem
-        fields = ['url', 'id', 'rack', 'place', 'book']
-
-
-class OrderSerializer(serializers.HyperlinkedModelSerializer):
-    order_item = serializers.HyperlinkedRelatedField(many=True, view_name='orderitem-detail', source='orderitem_set',
-                                                     queryset=OrderItem.objects.all())
-
-    class Meta:
-        model = Order
-        fields = ['url', 'id', 'user', 'user_email', 'status', 'city', 'address', 'order_id_in_shop', 'order_item']
-
-
 class OrderItemSerializer(serializers.HyperlinkedModelSerializer):
-    bookitem = serializers.HyperlinkedRelatedField(many=True, view_name='orderitembookitem-detail',
-                                                   read_only=True)
 
     class Meta:
         model = OrderItem
-        fields = ['url', 'id', 'quantity', 'book_store', 'order', 'bookitem']
+        fields = ['order', 'book_store', 'quantity']
+        read_only_fields = ['order', ]
 
 
-class OrderItemBookItemSerializer(serializers.HyperlinkedModelSerializer):
-    order_item = serializers.HyperlinkedRelatedField(many=True, view_name='orderitem-detail',
-                                                     read_only=True)
-    book_item = serializers.HyperlinkedRelatedField(many=True, view_name='bookitem-detail',
-                                                    read_only=True)
+class OrderSerializer(serializers.HyperlinkedModelSerializer):
+    order_item = OrderItemSerializer(many=True, write_only=True)
 
     class Meta:
-        model = OrderItemBookItem
-        fields = ['url', 'id', 'order_item', 'book_item']
+        model = Order
+        fields = ['user', 'user_email', 'status', 'city', 'address', 'order_id_in_shop', 'order_item']
+
+    def create(self, validated_data):
+        order = Order.objects.create(user=validated_data['user'],
+                                     user_email=validated_data['user_email'],
+                                     city=validated_data['city'],
+                                     address=validated_data['address'],
+                                     order_id_in_shop=validated_data['order_id_in_shop'])
+        batch = [OrderItem(book_store=item['book_store'], order=order,
+                           quantity=item['quantity']) for item in validated_data['order_item']]
+        order.orderitem_set.bulk_create(batch)
+        return order
 
