@@ -171,7 +171,7 @@ CELERY_BEAT_SCHEDULE = {
         'schedule': crontab()},
     'sync_order': {
         'task': 'shop.tasks.sync_order',
-        'schedule': crontab()},
+        'schedule': crontab(minute=1)},
     }
 
 CSRF_TRUSTED_ORIGINS = ["http://localhost:8000", "http://127.0.0.1:8000"]
