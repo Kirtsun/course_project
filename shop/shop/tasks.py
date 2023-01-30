@@ -46,6 +46,7 @@ def sync_book():
     pass
 
 
+@shared_task()
 def sync_order():
     order = Order.objects.filter(status='ORDERED')
     order_ids = order.value_list('id', flat=True)
