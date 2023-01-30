@@ -48,7 +48,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
 
-    'rest_framework.authtoken',
+    'django_filters',
 
 ]
 
@@ -140,6 +140,8 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
+
+        'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
 
 CSRF_TRUSTED_ORIGINS = ["http://localhost:8001", "http://127.0.0.1:8001", "http://0.0.0.0:8001"]

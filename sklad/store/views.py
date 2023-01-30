@@ -1,12 +1,23 @@
 
 from django.contrib.auth import get_user_model
 from rest_framework import viewsets
-
+from django_filters import rest_framework as filters
 from .models import Book, BookItem, Order, OrderItem, OrderItemBookItem
 from .serializers import BookSerializer, BookItemSerializer, OrderSerializer, OrderItemSerializer,\
     OrderItemBookItemSerializer
 
+import django_filters
+
 User = get_user_model()
+
+
+class OrderFilter(django_filters.FilterSet):
+
+    class Meta:
+        model = Order
+        fields = {
+            'order_id_in_shop': ['in']
+        }
 
 
 class BookViewSet(viewsets.ModelViewSet):
@@ -22,6 +33,8 @@ class BookItemViewSet(viewsets.ModelViewSet):
 class OrderViewSet(viewsets.ModelViewSet):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
+    filter_backends = (filters.DjangoFilterBackend,)
+    filterset_class = OrderFilter
 
 
 class OrderItemViewSet(viewsets.ModelViewSet):

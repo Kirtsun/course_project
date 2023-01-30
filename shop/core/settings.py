@@ -166,9 +166,12 @@ BROKER_URL = AMQP_URL
 CELERY_result_backend = REDIS_URL
 CELERY_BROKER_URL = BROKER_URL
 CELERY_BEAT_SCHEDULE = {
-    'syncbook': {
+    'sync_book': {
         'task': 'shop.tasks.sync_book',
-        'schedule': crontab()}
+        'schedule': crontab()},
+    'sync_order': {
+        'task': 'shop.tasks.sync_book',
+        'schedule': crontab()},
     }
 
 CSRF_TRUSTED_ORIGINS = ["http://localhost:8000", "http://127.0.0.1:8000"]
