@@ -1,4 +1,5 @@
 from django.db import models
+from django_lifecycle import LifecycleModel, hook, AFTER_UPDATE
 
 
 class Book(models.Model):

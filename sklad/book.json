@@ -1,0 +1,482 @@
+[
+{
+  "model": "store.book",
+  "pk": 1,
+  "fields": {
+    "title": "Potter",
+    "price": "0.03"
+  }
+},
+{
+  "model": "store.book",
+  "pk": 2,
+  "fields": {
+    "title": "Potter2",
+    "price": "3.00"
+  }
+},
+{
+  "model": "store.book",
+  "pk": 3,
+  "fields": {
+    "title": "Potter3",
+    "price": "5.00"
+  }
+},
+{
+  "model": "store.book",
+  "pk": 4,
+  "fields": {
+    "title": "Potter 4",
+    "price": "34.00"
+  }
+},
+{
+  "model": "store.book",
+  "pk": 5,
+  "fields": {
+    "title": "Potter 5",
+    "price": "67.00"
+  }
+},
+{
+  "model": "store.book",
+  "pk": 6,
+  "fields": {
+    "title": "Potter 6",
+    "price": "45.00"
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 1,
+  "fields": {
+    "book": 1,
+    "rack": "B",
+    "place": 5
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 2,
+  "fields": {
+    "book": 1,
+    "rack": "C",
+    "place": 4
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 3,
+  "fields": {
+    "book": 2,
+    "rack": "C",
+    "place": 5
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 4,
+  "fields": {
+    "book": 1,
+    "rack": "C",
+    "place": 3
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 5,
+  "fields": {
+    "book": 2,
+    "rack": "B",
+    "place": 45
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 6,
+  "fields": {
+    "book": 3,
+    "rack": "A",
+    "place": 2
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 7,
+  "fields": {
+    "book": 3,
+    "rack": "A",
+    "place": 87
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 8,
+  "fields": {
+    "book": 3,
+    "rack": "C",
+    "place": 45
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 9,
+  "fields": {
+    "book": 3,
+    "rack": "D",
+    "place": 46
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 10,
+  "fields": {
+    "book": 3,
+    "rack": "A",
+    "place": 47
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 11,
+  "fields": {
+    "book": 4,
+    "rack": "A",
+    "place": 55
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 12,
+  "fields": {
+    "book": 4,
+    "rack": "A",
+    "place": 56
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 13,
+  "fields": {
+    "book": 4,
+    "rack": "A",
+    "place": 57
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 14,
+  "fields": {
+    "book": 4,
+    "rack": "A",
+    "place": 58
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 15,
+  "fields": {
+    "book": 4,
+    "rack": "B",
+    "place": 59
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 16,
+  "fields": {
+    "book": 4,
+    "rack": "C",
+    "place": 60
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 17,
+  "fields": {
+    "book": 4,
+    "rack": "C",
+    "place": 61
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 18,
+  "fields": {
+    "book": 4,
+    "rack": "C",
+    "place": 62
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 19,
+  "fields": {
+    "book": 4,
+    "rack": "A",
+    "place": 63
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 20,
+  "fields": {
+    "book": 4,
+    "rack": "C",
+    "place": 64
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 21,
+  "fields": {
+    "book": 4,
+    "rack": "D",
+    "place": 65
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 22,
+  "fields": {
+    "book": 4,
+    "rack": "B",
+    "place": 66
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 23,
+  "fields": {
+    "book": 4,
+    "rack": "B",
+    "place": 69
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 24,
+  "fields": {
+    "book": 4,
+    "rack": "C",
+    "place": 67
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 25,
+  "fields": {
+    "book": 4,
+    "rack": "D",
+    "place": 68
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 26,
+  "fields": {
+    "book": 5,
+    "rack": "B",
+    "place": 70
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 27,
+  "fields": {
+    "book": 5,
+    "rack": "B",
+    "place": 71
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 28,
+  "fields": {
+    "book": 5,
+    "rack": "C",
+    "place": 72
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 29,
+  "fields": {
+    "book": 5,
+    "rack": "D",
+    "place": 73
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 30,
+  "fields": {
+    "book": 5,
+    "rack": "A",
+    "place": 74
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 31,
+  "fields": {
+    "book": 5,
+    "rack": "C",
+    "place": 75
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 32,
+  "fields": {
+    "book": 5,
+    "rack": "B",
+    "place": 76
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 33,
+  "fields": {
+    "book": 5,
+    "rack": "D",
+    "place": 77
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 34,
+  "fields": {
+    "book": 5,
+    "rack": "B",
+    "place": 78
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 35,
+  "fields": {
+    "book": 5,
+    "rack": "C",
+    "place": 79
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 36,
+  "fields": {
+    "book": 5,
+    "rack": "D",
+    "place": 80
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 37,
+  "fields": {
+    "book": 5,
+    "rack": "C",
+    "place": 81
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 38,
+  "fields": {
+    "book": 5,
+    "rack": "C",
+    "place": 82
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 39,
+  "fields": {
+    "book": 5,
+    "rack": "C",
+    "place": 83
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 40,
+  "fields": {
+    "book": 5,
+    "rack": "D",
+    "place": 84
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 41,
+  "fields": {
+    "book": 6,
+    "rack": "C",
+    "place": 84
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 42,
+  "fields": {
+    "book": 6,
+    "rack": "C",
+    "place": 85
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 43,
+  "fields": {
+    "book": 6,
+    "rack": "C",
+    "place": 86
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 44,
+  "fields": {
+    "book": 6,
+    "rack": "D",
+    "place": 87
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 45,
+  "fields": {
+    "book": 6,
+    "rack": "A",
+    "place": 88
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 46,
+  "fields": {
+    "book": 6,
+    "rack": "C",
+    "place": 89
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 47,
+  "fields": {
+    "book": 6,
+    "rack": "A",
+    "place": 90
+  }
+},
+{
+  "model": "store.bookitem",
+  "pk": 48,
+  "fields": {
+    "book": 6,
+    "rack": "A",
+    "place": 91
+  }
+}
+]

@@ -170,7 +170,7 @@ CELERY_BEAT_SCHEDULE = {
         'task': 'shop.tasks.sync_book',
         'schedule': crontab()},
     'sync_order': {
-        'task': 'shop.tasks.sync_book',
+        'task': 'shop.tasks.sync_order',
         'schedule': crontab()},
     }
 
