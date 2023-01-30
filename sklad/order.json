@@ -1,0 +1,1634 @@
+[
+{
+  "model": "store.order",
+  "pk": 1,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "olegkirtsun@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 1
+  }
+},
+{
+  "model": "store.order",
+  "pk": 2,
+  "fields": {
+    "user": "KirtsunO",
+    "user_email": "olegkirtsun@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 53
+  }
+},
+{
+  "model": "store.order",
+  "pk": 3,
+  "fields": {
+    "user": "KirtsunO",
+    "user_email": "olegkirtsun@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 54
+  }
+},
+{
+  "model": "store.order",
+  "pk": 4,
+  "fields": {
+    "user": "KirtsunO",
+    "user_email": "olegkirtsun@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 55
+  }
+},
+{
+  "model": "store.order",
+  "pk": 5,
+  "fields": {
+    "user": "KirtsunO",
+    "user_email": "olegkirtsun@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 56
+  }
+},
+{
+  "model": "store.order",
+  "pk": 6,
+  "fields": {
+    "user": "KirtsunO",
+    "user_email": "olegkirtsun@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 58
+  }
+},
+{
+  "model": "store.order",
+  "pk": 7,
+  "fields": {
+    "user": "KirtsunO",
+    "user_email": "olegkirtsun@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 59
+  }
+},
+{
+  "model": "store.order",
+  "pk": 8,
+  "fields": {
+    "user": "KirtsunO",
+    "user_email": "olegkirtsun@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 60
+  }
+},
+{
+  "model": "store.order",
+  "pk": 40,
+  "fields": {
+    "user": "KirtsunO",
+    "user_email": "olegkirtsun@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 92
+  }
+},
+{
+  "model": "store.order",
+  "pk": 41,
+  "fields": {
+    "user": "KirtsunO",
+    "user_email": "olegkirtsun@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 93
+  }
+},
+{
+  "model": "store.order",
+  "pk": 42,
+  "fields": {
+    "user": "KirtsunO",
+    "user_email": "olegkirtsun@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 94
+  }
+},
+{
+  "model": "store.order",
+  "pk": 43,
+  "fields": {
+    "user": "KirtsunO",
+    "user_email": "olegkirtsun@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 95
+  }
+},
+{
+  "model": "store.order",
+  "pk": 44,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 96
+  }
+},
+{
+  "model": "store.order",
+  "pk": 45,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 97
+  }
+},
+{
+  "model": "store.order",
+  "pk": 46,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 98
+  }
+},
+{
+  "model": "store.order",
+  "pk": 47,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 48,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 49,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 50,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 51,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 52,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 53,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 54,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "SUCCESS",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 55,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "SUCCESS",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 56,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "SUCCESS",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 57,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 58,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 59,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 60,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 61,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 62,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 63,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 64,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 65,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 66,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 67,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 68,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 69,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 70,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 71,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 72,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 73,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 74,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 75,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 76,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 77,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 78,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 79,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 80,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 81,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 82,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 83,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 84,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 85,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 86,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 87,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 88,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 89,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 90,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 91,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 92,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 93,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 94,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 95,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 96,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 97,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 98,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 99,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 100,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 101,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 102,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 103,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 104,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 105,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 106,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 107,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 108,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 109,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 110,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 111,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 112,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 113,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 114,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 115,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 116,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 117,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 118,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 119,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 120,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 121,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 122,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 123,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 124,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 125,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 126,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 127,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 128,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 129,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 130,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 131,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 132,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 133,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 134,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 135,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 136,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 137,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 138,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 139,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 140,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 141,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 142,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 143,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 144,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 145,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 146,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 147,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 148,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 149,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 150,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 151,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 152,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 153,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 154,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 155,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 156,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 157,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 158,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 159,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 160,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 161,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 162,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 163,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 164,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+},
+{
+  "model": "store.order",
+  "pk": 165,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 166,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 100
+  }
+},
+{
+  "model": "store.order",
+  "pk": 167,
+  "fields": {
+    "user": "Kyrtsun",
+    "user_email": "oleg@gmail.com",
+    "status": "IN_WORK",
+    "city": "Dnipro",
+    "address": "st. Volshebnaya, 50",
+    "order_id_in_shop": 101
+  }
+}
+]

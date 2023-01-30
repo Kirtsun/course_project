@@ -49,7 +49,7 @@ def sync_book():
 @shared_task()
 def sync_order():
     order = Order.objects.filter(status='ORDERED')
-    order_ids = order.value_list('id', flat=True)
+    order_ids = order.values_list('id', flat=True)
 
     r = requests.get('http://sklad:8001/order/', params={'order_id_in_shop': list(order_ids)})
     if r.status_code == 200:
