@@ -1,4 +1,5 @@
 from django.db import models
+from django_lifecycle import LifecycleModel, hook, AFTER_UPDATE
 
 
 class Book(models.Model):
@@ -28,7 +29,7 @@ class BookItem(models.Model):
         return self.book.title
 
 
-class Order(models.Model):
+class Order(LifecycleModel):
     IN_WORK = 'IN_WORK'
     SUCCESS = 'SUCCESS'
     FAIL = 'FAIL'
@@ -44,6 +45,15 @@ class Order(models.Model):
     address = models.CharField(max_length=100)
     order_id_in_shop = models.PositiveIntegerField()
 
+    @hook(AFTER_UPDATE, when="status", was="*", is_now='SUCCESS')
+    def on_status(self):
+        order = Order.objects.get(pk=self.pk)
+        order_item = order.orderitem_set.all()
+        for i in order_item:
+            for iq in OrderItem.objects.prefetch_related('book_items').filter(pk=i.id):
+                for iqw in iq.book_items.all():
+                    iqw.delete()
+
     def __str__(self):
         return f'Order Id {str(self.id)}, User {self.user}'
 
@@ -56,13 +66,3 @@ class OrderItem(models.Model):
 
     def __str__(self):
         return f'{self.book_store.title} x {self.quantity}'
-
-
-# class OrderItemBookItem(models.Model):
-#     class OrderItemBookItem(models.Model):
-#         order_item = models.ForeignKey(OrderItem)
-#         book_item = models.ForeignKey(BookItem)
-#
-#     def __str__(self):
-#         return f'Order Item Book Item Id {str(self.id)}'
-
