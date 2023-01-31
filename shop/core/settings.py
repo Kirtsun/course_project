@@ -168,7 +168,7 @@ CELERY_BROKER_URL = BROKER_URL
 CELERY_BEAT_SCHEDULE = {
     'sync_book': {
         'task': 'shop.tasks.sync_book',
-        'schedule': crontab()},
+        'schedule': crontab(minute=1)},
     'sync_order': {
         'task': 'shop.tasks.sync_order',
         'schedule': crontab(minute=1)},

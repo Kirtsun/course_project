@@ -58,8 +58,11 @@ def sync_order():
         res = r.json()
         for i in res:
             ordr = Order.objects.get(id=i['order_id_in_shop'])
-            ordr.status = i['status']
-            ordr.save()
+            if i['status'] == 'IN_WORK':
+                pass
+            else:
+                ordr.status = i['status']
+                ordr.save()
         else:
             sync_order.apply_async(countdown=15)
     pass
