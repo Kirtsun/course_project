@@ -12,6 +12,7 @@
     {% for obj in books %}
         <li>Book: <a href="{% url 'book_detail' obj.id %}">{{ obj.title }}</a></li>
         <p>Price - ${{ obj.price }}</p>
+        <p>In stock - {{ obj.quantity}}</p>
         <hr>
     {% endfor %}
     {%else%}

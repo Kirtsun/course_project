@@ -20,8 +20,8 @@
             <p>Navigation</p>
             <hr>
             <div class="sidebar-nav">
-                {% if user.is_authenticated %}
                 <li><a href="{% url 'book_list'%}">All Book</a></li>
+                {% if user.is_authenticated %}
                 <hr>
                 <li><a href="{% url 'cart_detail' %}">My cart</a></li>
                 <li><a href="{% url 'userprofile:my_profile' %}">My profile</a> </li>
