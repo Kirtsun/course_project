@@ -12,4 +12,4 @@ Two periodic tasks to synchronize the number of books and update the status of o
 
 The framework works with Docker. To start, you need to run two commands:
   - docker-compose build
-  - docker-compouse up
+  - docker-compose up
