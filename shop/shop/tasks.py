@@ -24,10 +24,8 @@ def send_order(order_id):
 
     r = requests.post('http://sklad:8001/order/', json=body)
     if r.status_code == 201:
-        print(r.status_code)
         order.status = 'ORDERED'
     else:
-        print(r.json())
         send_order.delay(order.id)
     pass
 
