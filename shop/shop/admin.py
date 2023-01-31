@@ -5,7 +5,7 @@ from .models import Book, Order, OrderItem
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    list_display = ("title", 'price', 'quantity', 'id_in_sklad',)
+    list_display = ('id', "title", 'price', 'quantity', 'id_in_sklad',)
     fieldsets = [
         (None, {'fields': ['title', 'price', 'quantity', 'id_in_sklad']})]
     list_filter = ['price']

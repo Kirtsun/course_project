@@ -16,7 +16,7 @@ def send_order(order_id):
         'order_id_in_shop': order.id,
         'order_item': [
                 {
-                    'book_store': item.book.id,
+                    'book_store': item.book.id_in_sklad,
                     'quantity': item.quantity
                 } for item in order_item
         ]
@@ -24,9 +24,11 @@ def send_order(order_id):
 
     r = requests.post('http://sklad:8001/order/', json=body)
     if r.status_code == 201:
+        print(r.status_code)
         order.status = 'ORDERED'
     else:
-        send_order.apply_async((order.id,), countdown=60)
+        print(r.json())
+        send_order.delay(order.id)
     pass
 
 

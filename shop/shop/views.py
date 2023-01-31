@@ -52,7 +52,7 @@ def order_create(request):
                                          quantity=item['quantity'])
 
             cart.clear()
-            send_order.delay(order_id=order.id)
+            send_order.delay(order.id)
             return render(request, 'shop/order_created.html',
                           {'order': order})
     else:
