@@ -23,7 +23,7 @@ def send_order(order_id):
     }
 
     r = requests.post('http://sklad:8001/order/', json=body)
-    if r.status_code == 200:
+    if r.status_code == 201:
         order.status = 'ORDERED'
     else:
         send_order.apply_async((order.id,), countdown=60)

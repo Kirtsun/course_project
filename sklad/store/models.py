@@ -52,14 +52,17 @@ class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
     book_store = models.ForeignKey(Book, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField()
+    book_items = models.ManyToManyField(BookItem)
 
     def __str__(self):
         return f'{self.book_store.title} x {self.quantity}'
 
 
-class OrderItemBookItem(models.Model):
-    order_item = models.ManyToManyField(OrderItem)
-    book_item = models.ManyToManyField(BookItem)
+# class OrderItemBookItem(models.Model):
+#     class OrderItemBookItem(models.Model):
+#         order_item = models.ForeignKey(OrderItem)
+#         book_item = models.ForeignKey(BookItem)
+#
+#     def __str__(self):
+#         return f'Order Item Book Item Id {str(self.id)}'
 
-    def __str__(self):
-        return f'Order Item Book Item Id {str(self.id)}'

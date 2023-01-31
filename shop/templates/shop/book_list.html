@@ -10,9 +10,15 @@
 <p><a href="{% url 'book_list' %}">Reset the filter</a> </p>
     {% if books%}
     {% for obj in books %}
-        <li>Book: <a href="{% url 'book_detail' obj.id %}">{{ obj.title }}</a></li>
+        {% if obj.quantity == 0 %}
+        <li>Book: {{ obj.title }}</li>
         <p>Price - ${{ obj.price }}</p>
-        <p>In stock - {{ obj.quantity}}</p>
+        <p>In stock - not available</p>
+        {%else%}
+        <li>Book: <a href="{% url 'book_detail' obj.id%}">{{ obj.title }}</a></li>
+        <p>Price - ${{ obj.price }}</p>
+        <p>In stock - not available</p>
+        {%endif%}
         <hr>
     {% endfor %}
     {%else%}

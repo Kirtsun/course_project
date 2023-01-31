@@ -2,9 +2,9 @@
 from django.contrib.auth import get_user_model
 from rest_framework import viewsets
 from django_filters import rest_framework as filters
-from .models import Book, BookItem, Order, OrderItem, OrderItemBookItem
-from .serializers import BookSerializer, BookItemSerializer, OrderSerializer, OrderItemSerializer,\
-    OrderItemBookItemSerializer
+from .models import Book, BookItem, Order, OrderItem
+from .serializers import BookSerializer, BookItemSerializer, OrderSerializer, OrderItemSerializer
+
 
 import django_filters
 
@@ -42,6 +42,3 @@ class OrderItemViewSet(viewsets.ModelViewSet):
     serializer_class = OrderItemSerializer
 
 
-class OrderItemBookItemViewSet(viewsets.ModelViewSet):
-    queryset = OrderItemBookItem.objects.all()
-    serializer_class = OrderItemBookItemSerializer

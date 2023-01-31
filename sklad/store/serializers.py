@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model
 
 from rest_framework import serializers
 
-from .models import Book, BookItem, Order, OrderItem, OrderItemBookItem
+from .models import Book, BookItem, Order, OrderItem
 
 User = get_user_model()
 
@@ -50,12 +50,4 @@ class OrderSerializer(serializers.ModelSerializer):
         return order
 
 
-class OrderItemBookItemSerializer(serializers.ModelSerializer):
-    order_item = serializers.HyperlinkedRelatedField(many=True, view_name='orderitem-detail',
-                                                     read_only=True)
-    book_item = serializers.HyperlinkedRelatedField(many=True, view_name='bookitem-detail',
-                                                    read_only=True)
 
-    class Meta:
-        model = OrderItemBookItem
-        fields = ['id', 'order_item', 'book_item']

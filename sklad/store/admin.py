@@ -1,20 +1,10 @@
 from django.contrib import admin
 
-from .models import Book, BookItem, Order, OrderItem, OrderItemBookItem
+from .models import Book, BookItem, Order, OrderItem
 
 
 class BookInLineBookItem(admin.TabularInline):
     model = BookItem
-    extra = 3
-
-
-class BookItemInLineOrderItemBookItem(admin.TabularInline):
-    model = OrderItemBookItem.book_item.through
-    extra = 3
-
-
-class OrderItemInLineOrderItemBookItem(admin.TabularInline):
-    model = OrderItemBookItem.order_item.through
     extra = 3
 
 
@@ -25,11 +15,6 @@ class OrderItemInLineOrder(admin.TabularInline):
 
 class OrderItemInLineBook(admin.TabularInline):
     model = OrderItem
-    extra = 3
-
-
-class OrderItemBookItemInLineOrderItem(admin.TabularInline):
-    model = OrderItemBookItem.order_item.through
     extra = 3
 
 
@@ -44,7 +29,6 @@ class BookAdmin(admin.ModelAdmin):
 class BookItemAdmin(admin.ModelAdmin):
     list_display = ['id', 'place', 'book', 'rack']
     list_display_links = ['place']
-    inlines = [BookItemInLineOrderItemBookItem]
 
 
 @admin.register(Order)
@@ -58,10 +42,6 @@ class OrderAdmin(admin.ModelAdmin):
 class OrderItemAdmin(admin.ModelAdmin):
     list_display = ['id', 'order', 'book_store', 'quantity']
     list_display_links = ['id', 'order']
-    inlines = [OrderItemBookItemInLineOrderItem]
 
 
-@admin.register(OrderItemBookItem)
-class OrderItemBookItemAdmin(admin.ModelAdmin):
-    list_display = ['id']
-    list_display_links = ['id']
+
